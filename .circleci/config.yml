@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/my-project
     docker:
-      - image: angular/ngcontainer
+      - image: circleci/node:6-browsers
     steps:
       - checkout
       - restore_cache:
